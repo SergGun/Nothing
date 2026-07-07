@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nothing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="icon" type="image/png"
+     href="./src/images/favicon/favicon.png" />
+    <script defer src="./src/scripts/main.js"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a href="#" class="top-bar__logo-link">
+              <img src="./src/images/page/logo.png" alt="Nothing Logo"
+               class="top-bar__logo" />
+            </a>
+            <div class="top-bar__icons">
+              <div class="top-bar__phone">
+                <a href="tel:+1 234 5555-55-55" class="icon icon--phone">
+                  <span class="top-bar__phone-number">+1 234 5555-55-55</span>
+                </a>
+
+              </div>
+              <a href="#menu" class="icon icon--menu"></a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <h1 class="header__title">
+              Bring joy back
+              <br />
+              to the everyday
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a href="#" class="top-bar__logo">
+            <img src="./src/images/page/logo.png" alt="Nothing Logo" />
+          </a>
+          <a href="#" class="icon icon--close"></a>
+        </div>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#products">
+                  Products
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#categories">
+                  Store
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#login">
+                  Login
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#cart">
+                  Cart(0)
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+1 234 5555-55-55" class="menu__phone-number">
+            +1 234 5555-55-55
+          </a>
+          <a href="tel:+1 234 5555-55-55" class="menu__call-to-order">
+            call to order
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section class="recommended" id="products">
+            <h2 class="section-title">Recommended</h2>
+            <div class="recommended__products">
+              <article class="product recommended__product">
+                <a href="#">
+                  <img src="./src/images/products/phone.png" alt="Nothing Phone"
+                   class="product_photo" />
+                </a>
+                <h3 class="product_title">Phone (1)</h3>
+                <p class="product_description">
+                  Designed with instinct, to bring joy back to the everyday.
+                  Through the Glyph Interface, a perfected OS and exceptional
+                  dual camera. All startlingly fast.
+                </p>
+                <p class="product_price">$ 499.00</p>
+              </article>
+              <article class="product recommended__product">
+                <a href="#">
+                  <img src="./src/images/products/ear.png" alt="Nothing Phone"
+                  class="product_photo" />
+                </a>
+                <h3 class="product_title">Ear (2)</h3>
+                <p class="product_description">
+                  Perfecting the path from artist to ear. So that music sounds
+                  just as it was intended.
+                </p>
+                <p class="product_price">$ 149.00</p>
+              </article>
+              <article class="product recommended__product">
+                <a href="#">
+                  <img src="./src/images/products/ear-stick.png" alt="Nothing Phone"
+                  class="product_photo" />
+                </a>
+                <h3 class="product_title">Ear (stick)</h3>
+                <p class="product_description">
+                  Tech you can’t feel. Leaving just space for sound to come to
+                  life. Powered by custom sound technology.
+                </p>
+                <p class="product_price">$ 119.00</p>
+              </article>
+            </div>
+          </section>
+          <section class="categories" id="categories">
+            <h2 class="section-title">Browse Nothing products by category</h2>
+
+            <div class="categories__wrapper">
+              <article class="category">
+                <div class="category__photos">
+                  <a href="#" class="category__link category__link--wide">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="
+                          ./src/images/categories/desktop/all-products-img-1-desktop.webp
+                        " />
+                      <source media="(min-width: 435px)" srcset="
+                          ./src/images/categories/tablet/all-products-img-1-tablet.webp
+                        " />
+                      <img src="./src/images/categories/mobile/all-products-img-1-mobile.webp" alt="All products"
+                        class="category__photo" />
+                    </picture>
+                  </a>
+
+                  <a href="#" class="category__link category__link--square">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="
+                          ./src/images/categories/desktop/all-products-img-2-desktop.webp
+                        " />
+                      <source media="(min-width: 435px)" srcset="
+                          ./src/images/categories/tablet/all-products-img-2-tablet.webp
+                        " />
+                      <img src="./src/images/categories/mobile/all-products-img-2-mobile.webp" alt="All products"
+                        class="category__photo" />
+                    </picture>
+                  </a>
+                </div>
+                <h3 class="category__title">All products</h3>
+              </article>
+
+              <article class="category">
+                <div class="category__photos">
+                  <a href="#" class="category__link category__link--square">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="
+                          ./src/images/categories/desktop/audio-img-1-desktop.webp
+                        " />
+                      <source media="(min-width: 435px)" srcset="
+                          ./src/images/categories/tablet/audio-img-1-tablet.webp
+                        " />
+                      <img src="./src/images/categories/mobile/audio-img-1-mobile.webp" alt="All products"
+                        class="category__photo" />
+                    </picture>
+                  </a>
+
+                  <a href="#" class="category__link category__link--wide">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="
+                          ./src/images/categories/desktop/audio-img-2-desktop.webp
+                        " />
+                      <source media="(min-width: 435px)" srcset="
+                          ./src/images/categories/tablet/audio-img-2-tablet.webp
+                        " />
+                      <img src="./src/images/categories/mobile/audio-img-2-mobile.webp" alt="All products"
+                        class="category__photo" />
+                    </picture>
+                  </a>
+                </div>
+                <h3 class="category__title">Audio</h3>
+              </article>
+
+              <article class="category">
+                <div class="category__photos">
+                  <a href="#" class="category__link category__link--wide">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="
+                          ./src/images/categories/desktop/accessories-img-1-desktop.webp
+                        " />
+                      <source media="(min-width: 435px)" srcset="
+                          ./src/images/categories/tablet/accessories-img-1-tablet.webp
+                        " />
+                      <img src="./src/images/categories/mobile/accessories-img-1-mobile.webp" alt="All products"
+                        class="category__photo" />
+                    </picture>
+                  </a>
+
+                  <a href="#" class="category__link category__link--square">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="
+                          ./src/images/categories/desktop/accessories-img-2-desktop.webp
+                        " />
+                      <source media="(min-width: 435px)" srcset="
+                          ./src/images/categories/tablet/accessories-img-2-tablet.webp
+                        " />
+                      <img src="./src/images/categories/mobile/accessories-img-2-mobile.webp" alt="All products"
+                        class="category__photo" />
+                    </picture>
+                  </a>
+                </div>
+                <h3 class="category__title">Accessories</h3>
+                <div class="category__button">
+                  <button type="button" class="button button--categories">
+                    View all
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="banner">
+            <div class="banner__image"></div>
+          </section>
+          <section class="about" id="about">
+            <h2 class="about__title section-title section-title--about">
+              About us
+            </h2>
+
+            <div class="about__description">
+              <p>
+                We’re a London-based tech company on a mission to remove
+                barriers between people and technology.
+              </p>
+              <p>
+                To do this, we’re crafting intuitive, flawlessly connected
+                products that improve our lives without getting in the way. No
+                confusing tech-speak. No silly product names. Just artistry,
+                passion and trust. And products we’re proud to share with our
+                friends and family. Simple.
+              </p>
+              <p>Because beautiful tech shouldn’t be complicated.</p>
+            </div>
+          </section>
+          <section class="contacts" id="contact">
+            <h2 class="section-title">Contact us</h2>
+
+            <form class="contacts__wrapper" action="#"
+            onsubmit="this.reset(); return false;">
+              <div class="contacts__field">
+                <input id="name" name="name"
+                class="contacts__input contacts__input--name" type="text"
+                  placeholder="Name" autocomplete="name"
+                  required autocapitalize="words"
+                  spellcheck="false" />
+              </div>
+
+              <div class="contacts__field">
+                <input id="email" name="email"
+                class="contacts__input contacts__input--email" type="email"
+                  placeholder="Email" autocomplete="email"
+                  required inputmode="email" />
+              </div>
+
+              <div class="contacts__field">
+                <textarea id="message" name="message"
+                class="contacts__input contacts__input--textarea"
+                  placeholder="Message" rows="5"
+                  required></textarea>
+              </div>
+
+              <div class="contacts__field">
+                <button type="submit" class="button button--contacts">
+                  Send
+                </button>
+              </div>
+
+              <div class="contacts__info">
+                <div class="contacts__info contacts__info--label">Phone</div>
+                <div class="contacts__info contacts__info--value">
+
+                  <a class="contacts__link" href="tel:+1 234 5555-55-55">+1 234 5555-55-55
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="contacts__info">
+                <div class="contacts__info contacts__info--label">Email</div>
+                <div class="contacts__info contacts__info--value">
+                  <a href="mailto:hello@nothing.com" class="contacts__link">hello@nothing.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contacts__info">
+                <div class="contacts__info contacts__info--label">Address</div>
+                <div class="contacts__info contacts__info--value">
+                  <a class="contacts__link" href="https://maps.google.com/?q=1600+Gray+St,+Houston,+TX+77002"
+                    target="_blank" rel="noopener noreferrer">
+                    1600–1620 Gray St<br />
+                    Houston, TX 77002
+                  </a>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

@@ -1,3 +1,19 @@
-body {
-  margin: 0;
-}
+// _main
+
+@use './utils/variables';
+@use './utils/mixins';
+@use './blocks/page';
+@use './blocks/header';
+@use './blocks/top-bar';
+@use './blocks/menu';
+@use './blocks/nav';
+@use './blocks/icon';
+@use './blocks/section-title';
+@use './blocks/main';
+@use './blocks/product';
+@use './blocks/recommended';
+@use './blocks/about';
+@use './blocks/button';
+@use './blocks/categories';
+@use './blocks/contacts';
+@use './blocks/banner';

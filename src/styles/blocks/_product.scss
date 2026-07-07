@@ -1,0 +1,11 @@
+@use '..//utils/variables' as *;
+
+.product {
+  &_photo {
+    width: 100%;
+  }
+
+  &_description {
+    font-family: $secondary-font;
+  }
+}

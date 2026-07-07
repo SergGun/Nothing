@@ -1,0 +1,40 @@
+@use '..//utils/variables' as *;
+@use '..//utils/mixins' as *;
+
+.recommended {
+  opacity: 0;
+
+  transform: translateY(180px);
+  transition:
+    opacity $animation-duration ease-out,
+    transform $animation-duration ease-out;
+
+  &__products {
+    row-gap: 40px;
+
+    @include page-grid;
+  }
+
+  &__product {
+    grid-column: 1 / -1;
+    transition: $animation-duration;
+
+    @include on-tablet {
+      grid-column: 1 / -1;
+    }
+
+    @include on-desktop {
+      grid-column: span 4;
+    }
+
+    &:hover {
+      z-index: 2;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.recommended.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,103 @@
+@use '..//utils/variables' as *;
+@use '..//utils/mixins' as *;
+
+.contacts {
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__wrapper {
+    grid-auto-flow: dense;
+    row-gap: 16px;
+
+    @include page-grid;
+  }
+
+  &__field {
+    grid-column: span 2;
+
+    @include on-tablet {
+      grid-column: span 6;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__input {
+    grid-column: 1 / -1;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 140%;
+
+    background-color: #f8f8fa;
+
+    &::placeholder {
+      color: #7e7e83;
+    }
+
+    &--name {
+      height: 48px;
+    }
+
+    &--email {
+      height: 48px;
+    }
+
+    &--textarea {
+      resize: none;
+    }
+
+    &:hover::placeholder {
+      color: $main-text-color;
+      transition: color $animation-duration;
+    }
+
+    &:hover {
+      border: 1px solid #d5d7de;
+    }
+
+    &:focus {
+      border: 1px solid #292929;
+      outline: none;
+    }
+  }
+
+  &__info {
+    grid-column: 1 / -1;
+
+    &--label {
+      font-size: 14px;
+      font-weight: 400;
+      color: #9393a3;
+    }
+
+    &--value {
+      font-family: $secondary-font;
+      font-size: 16px;
+      color: #191919;
+      transition: color $animation-duration;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+
+    @include on-tablet {
+      grid-column: span 6;
+    }
+
+    @include on-desktop {
+      grid-column: 7 / 13;
+    }
+  }
+}

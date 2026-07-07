@@ -1,4 +1,76 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Nothing
+
+A premium-looking landing page for the Nothing brand with a bold, modern and minimalist interface. The project showcases a responsive one-page experience with product highlights, category browsing and a polished navigation flow.
+
+## ✨ Overview
+
+This landing page is built as a responsive frontend experience focused on visual clarity, typography and immersive product presentation. It reflects the Nothing brand identity and has a clean structure suitable for portfolio and demo purposes.
+
+## 🎨 Design
+
+- Figma mockup: https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6802-139&t=L7eKz5YKLN0m5WxR-0
+
+## 🚀 Demo
+
+- GitHub Pages: https://serggun.github.io/Nothing/
+
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3 / SCSS
+- JavaScript
+- Parcel
+
+## ▶️ Local Development
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/SergGun/Nothing.git
+cd Nothing
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm start
+```
+
+4. Open the project in your browser at:
+
+```text
+http://localhost:8080
+```
+
+## 📦 Available npm Scripts
+
+- `npm start` — start the local development server with Parcel
+- `npm run build` — create a production build in the `dist` folder
+- `npm run lint` — run linters
+- `npm test` — run linting and tests
+
+## ⭐ Features
+
+- Responsive layout for desktop, tablet and mobile devices
+- Smooth and intuitive navigation menu
+- Product showcase sections with modern presentation
+- Elegant styling based on the Nothing brand experience
+- Clean and maintainable frontend structure
+
+## 📁 Project Structure
+
+```text
+Nothing/
+├── index.html
+├── package.json
+├── src/
+│   ├── images/
+│   ├── scripts/
+│   └── styles/
+```
