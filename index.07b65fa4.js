@@ -1,2 +1,0 @@
-if("IntersectionObserver"in window){var e=new window.IntersectionObserver(function(e){e.forEach(function(e){var r=e.isIntersecting;e.target.classList.toggle("show",r)})});document.querySelectorAll(".categories, .recommended").forEach(function(r){return e.observe(r)})}else document.querySelectorAll(".categories, .recommended").forEach(function(e){return e.classList.add("show")});
-//# sourceMappingURL=index.07b65fa4.js.map
