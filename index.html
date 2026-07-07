@@ -226,7 +226,11 @@
                 </div>
                 <h3 class="category__title">Accessories</h3>
                 <div class="category__button">
-                  <button type="button" class="button button--categories">
+                  <button 
+                    type="button" 
+                    class="button button--categories"
+                    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+                    >
                     View all
                   </button>
                 </div>
@@ -259,8 +263,10 @@
           <section class="contacts" id="contact">
             <h2 class="section-title">Contact us</h2>
 
-            <form class="contacts__wrapper" action="#"
-            onsubmit="this.reset(); return false;">
+            <form 
+              class="contacts__wrapper" 
+              onsubmit="sendEmail(); return false;"
+              >
               <div class="contacts__field">
                 <input id="name" name="name"
                 class="contacts__input contacts__input--name" type="text"
@@ -284,7 +290,9 @@
               </div>
 
               <div class="contacts__field">
-                <button type="submit" class="button button--contacts">
+                <button 
+                  type="submit" 
+                  class="button button--contacts">
                   Send
                 </button>
               </div>

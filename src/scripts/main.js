@@ -13,3 +13,24 @@ if ('IntersectionObserver' in window) {
     .querySelectorAll('.categories, .recommended')
     .forEach((el) => el.classList.add('show'));
 }
+
+
+function sendEmail() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const subject = `Message from ${name}`;
+
+  const body =
+`From: ${name}
+
+Contact email:
+${email}
+
+Message:
+${message}`;
+
+  window.location.href =
+    `mailto:hello@nothing.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
