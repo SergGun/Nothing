@@ -35,7 +35,7 @@ ${message}`;
     = `mailto:hello@nothing.com?subject=${encodeURIComponent(subject)}`
     + `&body=${encodeURIComponent(body)}`;
 
-    document.querySelector('.contacts__wrapper').reset();
+  document.querySelector('.contacts__wrapper').reset();
 }
 
 window.sendEmail = sendEmail;
