@@ -1,3 +1,5 @@
+'use strict';
+
 if ('IntersectionObserver' in window) {
   const observer = new window.IntersectionObserver((entries) => {
     entries.forEach(({ isIntersecting, target }) => {
@@ -14,7 +16,6 @@ if ('IntersectionObserver' in window) {
     .forEach((el) => el.classList.add('show'));
 }
 
-
 function sendEmail() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -22,8 +23,7 @@ function sendEmail() {
 
   const subject = `Message from ${name}`;
 
-  const body =
-`From: ${name}
+  const body = `From: ${name}
 
 Contact email:
 ${email}
@@ -31,6 +31,9 @@ ${email}
 Message:
 ${message}`;
 
-  window.location.href =
-    `mailto:hello@nothing.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href
+    = `mailto:hello@nothing.com?subject=${encodeURIComponent(subject)}`
+    + `&body=${encodeURIComponent(body)}`;
 }
+
+window.sendEmail = sendEmail;
