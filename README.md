@@ -1,18 +1,19 @@
+## 🎨 Design
+
+- [Figma mockup](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6802-139&t=L7eKz5YKLN0m5WxR-0)
+
+## 🚀 Demo
+
+- [Live Demo](https://serggun.github.io/Nothing/)
+
 # Nothing
 
-A premium-looking landing page for the Nothing brand with a bold, modern and minimalist interface. The project showcases a responsive one-page experience with product highlights, category browsing and a polished navigation flow.
+A landing page for the Nothing brand with a bold, modern and minimalist interface. The project showcases a responsive one-page experience with product highlights, category browsing and a polished navigation flow.
 
 ## ✨ Overview
 
 This landing page is built as a responsive frontend experience focused on visual clarity, typography and immersive product presentation. It reflects the Nothing brand identity and has a clean structure suitable for portfolio and demo purposes.
 
-## 🎨 Design
-
-- Figma mockup: https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6802-139&t=L7eKz5YKLN0m5WxR-0
-
-## 🚀 Demo
-
-- GitHub Pages: https://serggun.github.io/Nothing/
 
 ## 🛠 Technologies Used
 
